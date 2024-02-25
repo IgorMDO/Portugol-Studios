@@ -1,0 +1,75 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inicioBloco()
+
+		const inteiro tam = 5
+		inteiro mat[tam][tam]
+		inteiro soma_todos_valores
+		//variáveis para capturar os valores das respectivas linhas e somá-los
+		inteiro soma_linha1, soma_linha2, soma_linha3, soma_linha4, soma_linha5
+
+		//entrada de dados
+		escreva("Insira os valores da matriz:")
+		pulaLinha()
+		para(inteiro i=0; i<tam; i++){
+			para(inteiro j=0; j<tam; j++){
+				leia(mat[i][j])
+				limpa()
+			}
+		}
+		//processamento de dados
+		soma_linha1 = 0
+		soma_linha2 = 0
+		soma_linha3 = 0
+		soma_linha4 = 0
+		soma_linha5 = 0
+		//saída de dados
+		para(inteiro i=0; i<tam; i++){
+			para(inteiro j=0; j<tam; j++){
+				escreva(mat[i][j])
+
+				se(i==0){
+					soma_linha1 += mat[0][j]
+				} senao se(i==1){
+					soma_linha2 += mat[1][j]
+				} senao se(i==2){
+					soma_linha3 += mat[2][j]
+				} senao se(i==3){
+				soma_linha4 += mat[3][j]	
+				} senao{
+					soma_linha5 += mat[4][j]
+				}
+				escreva("|")
+				
+			}
+			pulaLinha()
+		}
+
+		//soma de cada linha da matriz
+		escreva("A soma da primeira linha é ", soma_linha1)
+		pulaLinha()
+		escreva("A soma da segunda linha é ", soma_linha2)
+		pulaLinha()
+		escreva("A soma da terceira linha é ", soma_linha3)
+		pulaLinha()
+		escreva("A soma da quarta linha é ", soma_linha4)
+		pulaLinha()
+		escreva("A soma da quinta linha é ", soma_linha5)
+		
+		fimBloco()
+	}
+	funcao inicioBloco(){
+		escreva("----Início do programa----")
+		escreva("\n\n")
+	}
+	funcao fimBloco(){
+		escreva("\n\n")
+		escreva("----Fim do programa----")
+	}
+	funcao pulaLinha(){
+		escreva("\n")
+	}
+}
