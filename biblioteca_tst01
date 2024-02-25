@@ -1,0 +1,38 @@
+programa
+{
+	
+inclua biblioteca Texto --> t
+	funcao inicio()
+	{
+		//Quantidade de pessoas por gênero
+		cadeia gen
+		inteiro n, m=0, f=0, outro=0
+		caracter ob
+
+		escreva("Digite 'F' ou 'f' para feminino e 'M' ou 'm' para masculino")
+		pulaLinha()
+		leia(gen)
+		limpa()
+		gen = t.caixa_alta(gen)
+		n = t.numero_caracteres(gen)
+		escreva("O número de caracteres em '", gen, "' é = ", n)
+
+		para(inteiro i=0; i<n; i++){
+			ob = t.obter_caracter(gen, i)
+			se(ob=='F'){
+				f++
+			} senao se(ob=='M'){
+				m++
+			} senao{
+				outro += 1 //outro ++
+				}
+		}
+		pulaLinha()
+		escreva("O número de mulheres é "+f+" e o número de homens é "+m+".")
+		pulaLinha()
+		escreva(outro+" pessoas não se identificam nem com o gênero masculino e nem com o feminino.")
+		}
+	funcao pulaLinha(){
+		escreva("\n")
+	}
+}
