@@ -1,0 +1,70 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro res, a, b
+		caracter op
+
+		escreva("Insira os valores a serem calculados: \n")
+		leia(a, b)
+		escreva("Digite a operação: \n+ \t- \n* \n/")
+		pulaLinha()
+		receba()
+		leia(op)
+		res = 0
+
+		escolha(op){
+			caso '+':
+			soma(a, b)
+			res = soma(a, b)
+			pare
+			caso '-':
+			sub(a, b)
+			res = sub(a, b)
+			pare
+			caso '*':
+			prod(a, b)
+			res = prod(a, b)
+			pare
+			caso '/':
+			se(b==0){
+				escreva("Não é possível fazer uma divisão quando o divisor vale 0.")
+			} senao{
+				div(a, b)
+				res = div(a, b)
+			}
+			caso contrario:
+			escreva("Digite uma opção válida")
+		}
+		escreva(" resposta = ", res)
+		
+	
+}
+	funcao pulaLinha(){
+		escreva("\n")
+	}
+	funcao receba(){
+		escreva("Insira: ")
+	}
+	funcao inteiro soma(inteiro x, inteiro y){
+		
+		retorne x + y
+	}
+	funcao inteiro sub(inteiro x, inteiro y){
+
+		retorne x - y
+	}
+	funcao inteiro prod(inteiro x, inteiro y){
+
+		retorne x * y
+	}
+	funcao inteiro div(inteiro x, inteiro y){
+
+		se(y==0){
+			escreva("Não é possível dividir por 0.")
+			retorne 0
+		} senao{
+			retorne x / y
+		}
+	}
+}
