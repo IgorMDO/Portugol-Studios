@@ -1,0 +1,17 @@
+programa
+{
+
+		inclua biblioteca Matematica--> mat
+	
+	funcao inicio()
+	{
+		real n1, r, p
+		real x = 4.0, y = 2.0, z = 3.0
+		r = mat.raiz(x, 2.0)
+		escreva("A raiz de ", x, " é = ", r)
+		escreva("\n")
+		p = mat.potencia(y, z)
+		escreva("A potencia de ", y, " elevado a ", z, " é = ", p)
+	
+	}
+}
