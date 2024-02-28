@@ -7,7 +7,7 @@ programa
 
 		escreva("Insira os valores a serem calculados: \n")
 		leia(a, b)
-		escreva("Digite a operação: \n+ \t- \n* \n/")
+		escreva("Digite a operação: \n+ \t- \n* \t/")
 		pulaLinha()
 		receba()
 		leia(op)
