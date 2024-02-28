@@ -1,0 +1,14 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		// Antecessor e Sucessor de um número inteiro
+		inteiro n, a_n, s_n
+		escreva("Digite um número: \n")
+		leia(n)
+		a_n = n - 1
+		s_n = n + 1
+		escreva("O antecessor e o sucessor do número digitado são,respectivamente,", a_n, " e ", s_n)
+	}
+}
