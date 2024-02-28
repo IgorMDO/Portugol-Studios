@@ -1,0 +1,32 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real n1, n2, n3, media, mediatotal, acm, soma
+		inteiro cont
+		cont = 0
+		acm = 0.0
+		media = 0.0
+		enquanto(cont<5){
+			escreva("Digite as notas do aluno: \n")
+			leia(n1, n2, n3)
+			soma = n1 + n2 + n3
+			media = soma / 3
+			escreva("A média do aluno foi: \n", media, "\n")
+			acm = acm + media
+			cont += 1
+		}
+		mediatotal = acm /5
+		se(mediatotal >= 0 e mediatotal <= 4){
+			escreva("\nTurma Reprovada com média = ", mediatotal, "\n") 
+		}
+		senao se(mediatotal >= 4 e mediatotal<= 7){
+			escreva("\nTurma de recuperação com média = ", mediatotal, "\n")
+		}
+		senao{
+			escreva("Turma aprovada com média igual a ", mediatotal, "\n")
+		}
+		
+	}
+}
