@@ -1,0 +1,50 @@
+programa
+{
+	inclua biblioteca Matematica
+--> mat
+	
+	funcao inicio()
+	{
+		inicioPrograma()
+		apresentacao()
+		real a, b, c
+		real delta, x1, x2
+
+		escreva("Insira o valor de a)")
+		pulaLinha()
+		leia(a)
+		escreva("Insira o valor de b)")
+		pulaLinha()
+		leia(b)
+		escreva("Insira o valor de c)")
+		pulaLinha()
+		leia(c)
+
+		formulaEquacao()
+		delta = (b*b) - 4 * a * c
+		x1 = (- b + mat.raiz(delta, 2.0) ) / (2*a)
+		x2 = (-b - mat.raiz(delta, 2.0) ) / (2*a)
+
+		escreva("O x1 da equação é = ", x1)
+		pulaLinha()
+		escreva("O x2 da equação é = ", x2)
+
+		fimPrograma()
+	}
+	funcao apresentacao(){
+		escreva("--- Equação do Segundo Grau ---")
+		escreva("\n\n")
+	}
+	funcao pulaLinha(){
+		escreva("\n")
+	}
+	funcao inicioPrograma(){
+		escreva("Início do Programa\n\n")
+		}
+		funcao fimPrograma(){
+			escreva("\n\nFim do Programa")
+		}
+		funcao formulaEquacao(){
+			escreva("a(x^2) + bx + c = 0")
+		}
+}
