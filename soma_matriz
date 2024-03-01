@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Soma de matriz
+		inteiro mat[3][3], i, j, soma
+		soma = 0
+		escreva("Digite os valores da matriz(linha, coluna) \n")
+		para(i=0; i < 3; i++){
+			para(j=0; j < 3; j++){
+				leia(mat[i][j])
+			}
+		}
+		para(i=0; i < 3; i++){
+			para(j=0; j < 3; j++){
+				escreva("\nPosição ", i, "|", j, ": ", mat[i][j])
+				soma += mat[i][j]
+			}
+			escreva("\n")
+		}
+		escreva("\nSoma dos elementos da matriz: ", soma)
+	}
+}
