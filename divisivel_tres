@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//exercicio02
+		inteiro n
+		escreva("Digite um número: \n")
+		leia(n)
+		se( n%2==0 e n%3==0){
+			escreva("O número digitado é par e é divisível por três")
+		}
+		senao{
+			escreva("O número digitado não é par e/ou não é divisível por três")
+			
+		}
+	}
+}
