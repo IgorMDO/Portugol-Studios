@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		const inteiro tam = 3
+		inteiro vet[tam], i
+		escreva("Digite os valores do vetor : \n")
+		para(i=0; i<tam; i++){
+			leia(vet[i])
+		}
+
+		para(i=0; i<tam; i++){
+			escreva("Posição: ", i, " --> ", vet[i])
+			pulaLinha()
+		}
+	}
+	funcao pulaLinha(){
+		escreva("\n")
+	}
+}
